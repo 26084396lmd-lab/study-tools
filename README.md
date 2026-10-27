@@ -22,7 +22,7 @@
 > 不要点「Code → Download ZIP」——那是源码包，里面没有 exe 和启动脚本，无法直接运行。
 
 1. **装浏览器扩展**：[Tampermonkey](https://www.tampermonkey.net/)（Chrome / Edge 应用商店均有）
-2. **启动本地服务**：到 [Releases](../../releases/latest) 下载 `学习小助手-*.zip`，解压后双击 `一键启动.bat`（想用 AI 兜底就先双击 `设置我的AI-Key.bat` 填自己的 Key；不填也能搜题，只是没有 AI 兜底）
+2. **启动本地服务**：到 [Releases](../../releases/latest) 下载 `study-helper-*.zip`（页面显示名为「学习小助手-…-清洁版.zip」），解压后双击 `一键启动.bat`（想用 AI 兜底就先双击 `设置我的AI-Key.bat` 填自己的 Key；不填也能搜题，只是没有 AI 兜底）
 3. **装脚本**：自动打开的安装页上点绿色按钮 → Tampermonkey 弹窗点安装 → 打开学习通课程页面即见右侧面板
 
 首次运行 exe 时 Windows 可能提示「已保护你的电脑」，点「更多信息 → 仍要运行」即可（程序未做数字签名）。下载后可用 Releases 页面的 `SHA256SUMS.txt` 校验压缩包。
