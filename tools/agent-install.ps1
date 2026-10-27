@@ -259,7 +259,7 @@ function Get-ExpectedSha256 {
     $tmp = Join-Path $env:TEMP ("study-helper-sha-" + [Guid]::NewGuid().ToString("N") + ".txt")
     try {
         Write-Log "下载校验文件：$checksumUrl"
-        Invoke-Download -Url $checksumUrl -OutFile $tmp -TimeoutSec 120 -UserAgent "study-helper-agent-install"
+        $null = Invoke-Download -Url $checksumUrl -OutFile $tmp -TimeoutSec 120 -UserAgent "study-helper-agent-install"
         $lines = Get-Content -LiteralPath $tmp -ErrorAction Stop
         foreach ($line in $lines) {
             if ($line -match '^([0-9a-fA-F]{64})\s+\*?(.+)$') {
@@ -673,7 +673,7 @@ function Download-Crx {
     foreach ($url in $CrxUrls) {
         try {
             Write-Log "下载 Tampermonkey：$url"
-            Invoke-Download -Url $url -OutFile $Destination -TimeoutSec 180 -UserAgent $ChromeUa
+            $null = Invoke-Download -Url $url -OutFile $Destination -TimeoutSec 180 -UserAgent $ChromeUa
             $bytes = [IO.File]::ReadAllBytes($Destination)
             if ($bytes.Length -gt 500000 -and [Text.Encoding]::ASCII.GetString($bytes, 0, 4) -eq "Cr24") {
                 Write-Log "Tampermonkey CRX 下载完成：$($bytes.Length) 字节"
