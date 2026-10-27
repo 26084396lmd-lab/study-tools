@@ -16,16 +16,27 @@
 - **防呆设计**：考试页自动回避、不及格自动清缓存重做（上限防死循环）、结果页不重复作答
 - **小玩意**：日志区壁纸轮换（◀▶手动/定时自动，需本机装 Node.js，没有不影响答题）、面板可折叠
 
-## 📦 安装（3 步，2 分钟）
+## 📦 安装（5 步，约 3 分钟）
 
 > **普通用户请从 [Releases](../../releases/latest) 下载发布包。**
 > 不要点「Code → Download ZIP」——那是源码包，里面没有 exe 和启动脚本，无法直接运行。
 
-1. **装浏览器扩展**：[Tampermonkey](https://www.tampermonkey.net/)（Chrome / Edge 应用商店均有）
-2. **启动本地服务**：到 [Releases](../../releases/latest) 下载 `study-helper-*.zip`（页面显示名为「学习小助手-…-清洁版.zip」），解压后双击 `一键启动.bat`（想用 AI 兜底就先双击 `设置我的AI-Key.bat` 填自己的 Key；不填也能搜题，只是没有 AI 兜底）
-3. **装脚本**：自动打开的安装页上点绿色按钮 → Tampermonkey 弹窗点安装 → 打开学习通课程页面即见右侧面板
+1. **装 Tampermonkey**：[Edge 加载项](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) 或 [Chrome 网上应用店](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)，点「获取 / 添加至 Chrome」。
+2. **打开「允许用户脚本」**：Edge 地址栏输入 `edge://extensions` → Tampermonkey → 详细信息 → 允许用户脚本；Chrome 用 `chrome://extensions`。**不开这个开关，脚本能装进去但不会运行。**
+3. **启动本地服务**：到 [Releases](../../releases/latest) 下载 `study-helper-*.zip`（页面显示名为「学习小助手-…-清洁版.zip」），解压后双击 `一键启动.bat`；想用 AI 兜底就先双击 `设置我的AI-Key.bat` 填自己的 Key（不填也能搜题，只是没有 AI 兜底）。
+4. **装脚本**：在打开的 `安装.html` 点绿色「安装脚本」→ Tampermonkey 弹窗点「安装」。如果页面是一整页 JavaScript 代码，按 `F5` 刷新一次。
+5. **使用**：登录学习通，进入课程章节，右侧出现「学习小助手」面板，选模式后点「一键启动」。
 
-首次运行 exe 时 Windows 可能提示「已保护你的电脑」，点「更多信息 → 仍要运行」即可（程序未做数字签名）。下载后可用 Releases 页面的 `SHA256SUMS.txt` 校验压缩包。
+**详细图文教程（含 4 张截图、SHA256 校验、常见问题、AI 全自动安装）**：
+
+- 安装包内：`安装教程.html` / `安装教程.md`
+- 仓库：[安装教程.md](安装教程.md) · [AGENT_INSTALL.md](AGENT_INSTALL.md)（给 AI 助手）
+- 直接下载：<https://github.com/26084396lmd-lab/study-tools/releases/download/v1.3.47/study-helper-1.3.47.zip>
+- 校验文件：<https://github.com/26084396lmd-lab/study-tools/releases/download/v1.3.47/SHA256SUMS.txt>
+
+有 AI 助手时，可以把 [AGENT_INSTALL.md](AGENT_INSTALL.md) 里的提示词整段发给它；也可以解压后双击 `AI自动安装.bat`。停止本地服务用 `停止学习小助手.bat`。
+
+首次运行 exe 时 Windows 可能提示「已保护你的电脑」，点「更多信息 → 仍要运行」即可（程序未做数字签名）。下载后可用 Releases 页面的 `SHA256SUMS.txt` 校验压缩包；详细步骤见 `安装教程.html`。
 
 ## 🐍 从源码运行
 
