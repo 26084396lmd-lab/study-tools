@@ -1,0 +1,6 @@
+# Runtime dependencies for bridge/free_tiku_bridge.py
+requests>=2.31,<3
+fonttools>=4.50,<5
+
+# Build-only dependency (not needed to run from source)
+pyinstaller>=6.0,<7

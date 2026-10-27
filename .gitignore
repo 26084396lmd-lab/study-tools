@@ -1,0 +1,24 @@
+# 安装包 / 大文件放 GitHub Releases 上传，不进 git
+release/
+
+# 本地配置文件与密钥
+ai_config.json
+*.log
+
+# 依赖与构建产物
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+bridge/dist/
+bridge/build/
+*.spec
+
+# 系统垃圾文件
+Thumbs.db
+.DS_Store
+
+# 本地发布辅助文件（不公开）
+发布到GitHub步骤.txt
+一键上传.bat
+发布说明.txt

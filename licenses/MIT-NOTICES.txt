@@ -1,0 +1,45 @@
+MIT License notices
+===================
+
+The following third-party components are used under the MIT License.
+Each copyright notice is retained below. The full MIT permission text
+follows the list.
+
+1) SocialSisterYi/xuexiaoyi-to-xuexitong-tampermonkey-proxy
+   Copyright (c) 2022 社会易姐QwQ
+   https://github.com/SocialSisterYi/xuexiaoyi-to-xuexitong-tampermonkey-proxy
+
+2) DokiDoki1103/tikuAdapter
+   Copyright (c) 2023 itihey
+   https://github.com/DokiDoki1103/tikuAdapter
+
+3) 2488054910/ocs-deepseek-adapter
+   Copyright (c) 2026 2488054910
+   https://github.com/2488054910/ocs-deepseek-adapter
+
+4) FontTools
+   Copyright (c) 2017 Just van Rossum
+   https://github.com/fonttools/fonttools
+
+---------------------------------------------------------------------------
+MIT License
+
+Copyright (c) the respective copyright holders listed above.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
